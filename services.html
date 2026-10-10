@@ -1,119 +1,169 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FASHION - الملابس</title>
+    <title>Products | FASHION.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cairo:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
 
     <header class="header">
-        <h1>FASHION.</h1>
-        <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="services.html">المنتجات</a>
-            <a href="LOg in.html">تسجيل الدخول</a>
+        <a href="index.html" class="logo">FASHION.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Products</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
         </nav>
+        <div class="nav-actions">
+            <button class="icon-btn cart-btn" aria-label="Cart">
+                <svg viewBox="0 0 24 24"><path d="M3 4h3l2.5 11h9L20 7H7"/><circle cx="10" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <a href="LOg%20in.html" class="login-btn">Login</a>
+        </div>
     </header>
 
-    <section class="intro">
-        <h2>اكتشف أحدث الملابس</h2>
-        <p>اختار الستايل المناسب ليك من مجموعتنا الجديدة</p>
-    </section>
+    <main>
+        <section class="page-head">
+            <p class="crumbs"><a href="index.html">Home</a> / Products</p>
+            <h1>All Products</h1>
+            <p class="sub" dir="rtl">اختار الستايل المناسب ليك من مجموعتنا الجديدة.</p>
+        </section>
 
-    <main class="products">
-
-        <!-- المنتج الأول -->
-        <article class="product">
-            <img src="img/25403185395283272.jpg" alt="طقم رجالي">
-            <div class="product-info">
-                <span class="tag">جديد</span>
-                <h2>طقم رجالي كلاسيك</h2>
-                <p>المقاسات: L - XL</p>
-                <p>الخامة: قطن</p>
-                <p class="price">1500 جنيه</p>
-                <button class="buy-btn">شراء الآن</button>
+        <section class="shop">
+            <div class="toolbar">
+                <div class="filters" role="group" aria-label="Filter products">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="set">Sets</button>
+                    <button class="chip" data-filter="hoodie">Hoodies</button>
+                    <button class="chip" data-filter="shirt">Shirts</button>
+                    <button class="chip" data-filter="jacket">Jackets</button>
+                </div>
+                <p class="result-count"><span id="shown">6</span> products</p>
             </div>
-        </article>
 
-        <!-- المنتج الثاني -->
-        <article class="product">
-            <img src="img/mens outfit.jpg" alt="طقم رجالي">
-            <div class="product-info">
-                <span class="tag">مميز</span>
-                <h2>طقم رجالي أنيق</h2>
-                <p>المقاسات: M - L</p>
-                <p>الخامة: قطن</p>
-                <p class="price">1750 جنيه</p>
-                <button class="buy-btn">شراء الآن</button>
+            <div class="products">
+
+                <article class="product" data-cat="set">
+                    <div class="thumb">
+                        <span class="badge">NEW</span>
+                        <img src="img/set.jpg" alt="طقم رجالي كلاسيك" loading="lazy">
+                    </div>
+                    <div class="body" dir="rtl">
+                        <h2>طقم رجالي كلاسيك</h2>
+                        <div class="meta"><span>المقاسات</span><b>L - XL</b></div>
+                        <div class="meta"><span>الخامة</span><b>قطن</b></div>
+                        <div class="foot" dir="ltr"><span class="price">1,500 EGP</span><button class="buy-btn">Buy Now</button></div>
+                    </div>
+                </article>
+
+                <article class="product" data-cat="set">
+                    <div class="thumb">
+                        <span class="badge">FEATURED</span>
+                        <img src="img/AntoniosClothing outfits for men.jpg" alt="طقم رجالي أنيق" loading="lazy">
+                    </div>
+                    <div class="body" dir="rtl">
+                        <h2>طقم رجالي أنيق</h2>
+                        <div class="meta"><span>المقاسات</span><b>M - L</b></div>
+                        <div class="meta"><span>الخامة</span><b>قطن</b></div>
+                        <div class="foot" dir="ltr"><span class="price">1,750 EGP</span><button class="buy-btn">Buy Now</button></div>
+                    </div>
+                </article>
+
+                <article class="product" data-cat="set">
+                    <div class="thumb">
+                        <span class="badge">BEST SELLER</span>
+                        <img src="img/jacket.jpg" alt="طقم شبابي" loading="lazy">
+                    </div>
+                    <div class="body" dir="rtl">
+                        <h2>طقم شبابي</h2>
+                        <div class="meta"><span>المقاسات</span><b>M - L</b></div>
+                        <div class="meta"><span>الخامة</span><b>قطن</b></div>
+                        <div class="foot" dir="ltr"><span class="price">2,000 EGP</span><button class="buy-btn">Buy Now</button></div>
+                    </div>
+                </article>
+
+                <article class="product" data-cat="hoodie">
+                    <div class="thumb">
+                        <span class="badge">NEW</span>
+                        <img src="img/479563060333590981.jpg" alt="هودي رجالي" loading="lazy">
+                    </div>
+                    <div class="body" dir="rtl">
+                        <h2>هودي رجالي</h2>
+                        <div class="meta"><span>المقاسات</span><b>M - L - XL</b></div>
+                        <div class="meta"><span>الخامة</span><b>قطن</b></div>
+                        <div class="foot" dir="ltr"><span class="price">950 EGP</span><button class="buy-btn">Buy Now</button></div>
+                    </div>
+                </article>
+
+                <article class="product" data-cat="shirt">
+                    <div class="thumb">
+                        <span class="badge">FEATURED</span>
+                        <img src="img/479563060341929388.jpg" alt="قميص رجالي" loading="lazy">
+                    </div>
+                    <div class="body" dir="rtl">
+                        <h2>قميص رجالي</h2>
+                        <div class="meta"><span>المقاسات</span><b>M - L - XL</b></div>
+                        <div class="meta"><span>الخامة</span><b>قطن</b></div>
+                        <div class="foot" dir="ltr"><span class="price">700 EGP</span><button class="buy-btn">Buy Now</button></div>
+                    </div>
+                </article>
+
+                <article class="product" data-cat="jacket">
+                    <div class="thumb">
+                        <span class="badge">NEW ARRIVAL</span>
+                        <img src="img/479563060342237979.jpg" alt="جاكيت شبابي" loading="lazy">
+                    </div>
+                    <div class="body" dir="rtl">
+                        <h2>جاكيت شبابي</h2>
+                        <div class="meta"><span>المقاسات</span><b>L - XL - XXL</b></div>
+                        <div class="meta"><span>الخامة</span><b>حسب الموديل</b></div>
+                        <div class="foot" dir="ltr"><span class="price">1,350 EGP</span><button class="buy-btn">Buy Now</button></div>
+                    </div>
+                </article>
+
             </div>
-        </article>
-
-        <!-- المنتج الثالث -->
-        <article class="product">
-            <img src="img/Old Money Streetwear Outfit for Men _ Minimalist Look.jpg" alt="طقم شبابي">
-            <div class="product-info">
-                <span class="tag">الأكثر طلبًا</span>
-                <h2>طقم شبابي</h2>
-                <p>المقاسات: M - L</p>
-                <p>الخامة: قطن</p>
-                <p class="price">2000 جنيه</p>
-                <button class="buy-btn">شراء الآن</button>
-            </div>
-        </article>
-
-        <!-- المنتج الرابع -->
-        <article class="product">
-            <img src="img/Outfit Style Ideas_ Casual Fashion Tips & Trendy Everyday Looks.jpg" alt="هودي رجالي">
-            <div class="product-info">
-                <span class="tag">جديد</span>
-                <h2>هودي رجالي</h2>
-                <p>المقاسات: M - L - XL</p>
-                <p>الخامة: قطن</p>
-                <p class="price">950 جنيه</p>
-                <button class="buy-btn">شراء الآن</button>
-            </div>
-        </article>
-
-        <!-- المنتج الخامس -->
-        <article class="product">
-            <img src="img/599189925472800583.jpg" alt="قميص رجالي">
-            <div class="product-info">
-                <span class="tag">مميز</span>
-                <h2>قميص رجالي</h2>
-                <p>المقاسات: M - L - XL</p>
-                <p>الخامة: قطن</p>
-                <p class="price">700 جنيه</p>
-                <button class="buy-btn">شراء الآن</button>
-            </div>
-        </article>
-
-        <!-- المنتج السادس -->
-        <article class="product">
-            <img src="img/1149121661145273627.jpg" alt="جاكيت شبابي">
-            <div class="product-info">
-                <span class="tag">وصل حديثًا</span>
-                <h2>جاكيت شبابي</h2>
-                <p>المقاسات: L - XL - XXL</p>
-                <p>الخامة: حسب الموديل</p>
-                <p class="price">1350 جنيه</p>
-                <button class="buy-btn">شراء الآن</button>
-            </div>
-            
-        </article>
-
+        </section>
     </main>
 
-    <footer class="footer">
-        <p>© 2026 FASHION. جميع الحقوق محفوظة.</p>
+    <footer class="footer" id="contact">
+        <a href="index.html" class="logo">FASHION.</a>
+        <p dir="rtl">© 2026 FASHION. جميع الحقوق محفوظة.</p>
     </footer>
 
+    <script>
+        const chips = document.querySelectorAll('.chip');
+        const items = document.querySelectorAll('.product');
+        const shown = document.getElementById('shown');
+        const cartCount = document.getElementById('cartCount');
+        let cart = 0;
+
+        chips.forEach(chip => chip.addEventListener('click', () => {
+            chips.forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+            let n = 0;
+            items.forEach(p => {
+                const ok = chip.dataset.filter === 'all' || p.dataset.cat === chip.dataset.filter;
+                p.hidden = !ok;
+                if (ok) n++;
+            });
+            shown.textContent = n;
+        }));
+
+        document.querySelectorAll('.buy-btn').forEach(btn => btn.addEventListener('click', () => {
+            cartCount.textContent = ++cart;
+            cartCount.classList.add('on');
+            const old = btn.textContent;
+            btn.textContent = 'Added ✓';
+            btn.disabled = true;
+            setTimeout(() => { btn.textContent = old; btn.disabled = false; }, 1200);
+        }));
+    </script>
 </body>
 </html>
-
-
-
-
