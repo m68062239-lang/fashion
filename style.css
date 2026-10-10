@@ -4,7 +4,7 @@ padding: 20px;
 }
     
 h1{
-    color: rgb(13, 114, 155);
+    color: #d7ad70;;
 font-size: 35px;
     text-align: center;
 }
@@ -20,7 +20,7 @@ button{
     border-radius: 5px;
 }
 div{
-    background-color: rgb(13, 116, 201);
+    background-color: #d7ad70;
     padding: 15px;
     margin: 15px;
     border-radius: 10px;
@@ -32,7 +32,7 @@ nav{
 nav a {
     text-decoration: none;
     margin: 0 10px;
-     color: rgb(12, 156, 212);
+     color:#d7ad70;
      font-size: 18px;
      background-color: beige;
      border-radius: 8px;
@@ -42,7 +42,7 @@ nav a {
       border: none;
 }
 button:hover{
-   background-color: rgb(13, 139, 197);
+   background-color: #d7ad70;
     cursor:  poin}
 .button{ color: black;}
 

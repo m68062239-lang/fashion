@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 .y{
-     background-color:rgb(23, 147, 179) ;
+     background-color: #d7ad70;
     color: rgb(244, 242, 248);
     padding: 10px 20px;
     border: none;
@@ -39,7 +39,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    background-color: #007bff
+    background-color: #d7ad70;
     
 }
  .login-box button:hover {
